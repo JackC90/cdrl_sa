@@ -96,6 +96,7 @@ class CDRL_Dataset_test(Dataset):
         self.files = sorted(glob.glob(self.total_path + "/A/*.*"))
         
     def __getitem__(self, index):
+        location = self.files[index % len(self.files)].replace("\\","/")
         name = location.split('/')[-1]
         
         img_A = cv2.imread(location, cv2.IMREAD_COLOR)

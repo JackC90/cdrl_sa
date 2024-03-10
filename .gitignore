@@ -1,2 +1,7 @@
 /datasets/
 /pretrain_weight/
+/pixel_img/
+/pixel_img_morpho/
+/gener_img/
+/images/
+/saved_models/
